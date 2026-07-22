@@ -1,0 +1,39 @@
+# MExRE – Systemkern
+
+MExRE ist ein modularer Systemkern bestehend aus den Achsen ME, RE sowie
+den Modi x.mode und y.mode. Die zentrale Struktur ist die 9×9-Matrix.mode.
+
+## Struktur
+
+ROOT      = MExRE
+AXES      = ME / RE / x.mode / y.mode
+MATRIX    = 9×9-Matrix.mode
+READY     = 100%
+UTF8      = OK
+
+## Dateien
+
+- ME                  – Hauptachse
+- RE                  – Gegenachse
+- x.mode              – Eingangsmodus
+- y.mode              – Ausgangsmodus
+- DEF.me              – Definitionen
+- ID.html             – Identität
+- 9×9-Matrix.mode     – Matrixkern
+- index.html          – Systemstart
+- README.md           – Dokumentation
+
+## 9×9-Matrix.mode
+
+Die Matrix wird durch ein äußeres Produkt eines 9-Element-Vektors erzeugt.
+Sie ist symmetrisch und dient als Basis für ME/RE-Berechnungen.
+
+## Visualisierung
+
+index.html enthält eine Canvas-Animation zur Darstellung von ME-Orbit
+und RE-Pulse.
+
+## Status
+
+READY
+Das System ist vollständig geladen und kann erweitert werden.
