@@ -1,1 +1,17 @@
-X.room
+const PREFETCH_ARTE = [
+  "-_0O", "-_O0", "-_R0", "-_0M",
+  "IN", "OUT",
+  "IX", "XI",
+  "AX", "XA",
+  "iA", "Ia",
+  "uA", "Ua",
+  "Ao", "Oa",
+  "X.room", "X.room.CORE", "X.room.IN", "X.room.OUT",
+  "SCAN.me", "FINAL SCAN",
+  "respo.me",
+  "MULTI.me", "MXU.me", "Mat.me",
+  "META²³", "META360",
+  "octa²", "octa³",
+  "NC.raw",
+  "rix.me", "ro.me"
+];
