@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>MExRE · MX∞ · ALL×ALL · AXIOM.ME</title>
+<title>MExRE · ME/RE · 9×9-Matrix.mode</title>
 
 <style>
 body { background:#000; color:#0f0; font-family:Consolas; padding:20px; }
@@ -16,71 +16,43 @@ canvas { background:#111; border:1px solid #333; margin-top:20px; }
 
 <body>
 
-<h1>MExRE · MX∞ · ALL×ALL · AXIOM.ME</h1>
+<h1>MExRE · ME/RE · Systemkern</h1>
 
 <pre>
 ROOT      = MExRE
-SYSTEM    = MX∞
-RAW       = NC.raw
-META      = META²³
-OCTA      = octa² + octa³
-ANCHOR    = AXIOM.ME
+AXES      = ME / RE / x.mode / y.mode
+MATRIX    = 9×9-Matrix.mode
 READY     = 100%
 UTF8      = OK
 </pre>
 
 <section>
-<h2>AXIOM · ME / U / EU / RE / UreE / ME_RE</h2>
+<h2>AXIOM · ME / RE</h2>
 <pre>
-AXIOM.ME    = ME( I( N( E( M( 360° × 100% × (ich × all × ICH × too) ) ) ) ) )
-AXIOM.U     = U( I( N( E( M( 360° × 100% × (ich × all × ICH × too) ) ) ) ) )
-AXIOM.EU    = EU( I( N( E( M( 360° × 100% × (ich × all × ICH × too) ) ) ) ) )
-AXIOM.RE    = RE( I( N( E( M( 360° × 100% × (ich × all × ICH × too) ) ) ) ) )
-AXIOM.UreE  = UreE( I( N( E( M( 360° × 100% × (ich × all × ICH × too) ) ) ) ) )
-AXIOM.ME_RE = ME/RE( I( N( E( M( 360° × 100% × (ich × all × ICH × too) ) ) ) ) )
+AXIOM.ME = ME( I( N( E( M( 360° × 100% × (ich × all × ICH × too) ) ) ) ) )
+AXIOM.RE = RE( I( N( E( M( 360° × 100% × (ich × all × ICH × too) ) ) ) ) )
 </pre>
 </section>
 
 <section>
-<h2>MX∞ · Mystery-Achse</h2>
-<a href="./MX∞/X.room">MX∞ · X.room</a>
-<a href="./MX∞/∞_0M">MX∞ · ∞_0M</a>
-<a href="./MX∞/DEF.me">MX∞ · DEF.me</a>
-<a href="./MX∞/SCAN.me">MX∞ · SCAN.me</a>
-<a href="./MX∞/FINAL SCAN">MX∞ · FINAL SCAN</a>
-<a href="./MX∞/respo.me">MX∞ · respo.me</a>
-<a href="./MX∞/Mat.me">MX∞ · Mat.me</a>
-<a href="./MX∞/MULTI.me">MX∞ · MULTI.me</a>
-<a href="./MX∞/MXU.me">MX∞ · MXU.me</a>
-<a href="./MX∞/rix,me">MX∞ · rix.me</a>
-<a href="./MX∞/ro.me">MX∞ · ro.me</a>
+<h2>System-Dateien</h2>
+<a href="./ME">ME · Hauptachse</a>
+<a href="./RE">RE · Gegenachse</a>
+<a href="./x.mode">x.mode · Eingangsmodus</a>
+<a href="./y.mode">y.mode · Ausgangsmodus</a>
+<a href="./DEF.me">DEF.me · Definitionen</a>
+<a href="./ID.html">ID.html · Identität</a>
+<a href="./README.md">README · Dokumentation</a>
+<a href="./9×9-Matrix.mode">9×9-Matrix.mode · Matrixkern</a>
 </section>
 
 <section>
-<h2>META²³ · Meta-Werkzeuge</h2>
-<a href="./MX∞/META²³/META².room">META²</a>
-<a href="./MX∞/META²³/META³.room">META³</a>
-<a href="./MX∞/META²³/META360.room">META360</a>
-</section>
-
-<section>
-<h2>NC.raw · RAW-System</h2>
-<a href="./MX∞/NC.raw">NC.raw · RAW-Kern</a>
-</section>
-
-<section>
-<h2>OCTA · System</h2>
-<a href="./octa²">octa² · Inhalt</a>
-<a href="./octa³">octa³ · Achsen</a>
-</section>
-
-<section>
-<h2>MX∞ · Visualisierung</h2>
+<h2>ME/RE · Visualisierung</h2>
 <canvas id="sigCanvas" width="500" height="300"></canvas>
 </section>
 
 <script>
-// --- MX∞ SIGNATURE RENDERER ---
+// --- ME/RE SIGNATURE ---
 const c = document.getElementById("sigCanvas");
 const x = c.getContext("2d");
 let t = 0;
@@ -88,20 +60,14 @@ let t = 0;
 function renderSignature() {
     x.clearRect(0,0,c.width,c.height);
 
-    // MX∞ Orbit
+    // ME Orbit
     x.strokeStyle = "#6cf";
     x.lineWidth = 2;
     x.beginPath();
     x.arc(250,150,80 + Math.sin(t*2)*10,0,Math.PI*2);
     x.stroke();
 
-    // ∞_0M Blink
-    if(Math.sin(t*3) > 0.8){
-        x.fillStyle = "#f00";
-        x.fillRect(10,10,20,20);
-    }
-
-    // AXIOM Pulse
+    // RE Pulse
     x.strokeStyle = "#0f0";
     x.lineWidth = 3;
     x.beginPath();
